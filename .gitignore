@@ -1,1 +1,7 @@
 /_resources/node_modules/
+
+/HomeSupply/HomeSupply/bin
+/HomeSupply/HomeSupply/obj/Debug/HomeSupply.dll
+/HomeSupply/HomeSupply/obj/Debug/HomeSupply.pdb
+/HomeSupply/HomeSupply/bin/HomeSupply.dll
+/HomeSupply/HomeSupply/bin/HomeSupply.pdb
