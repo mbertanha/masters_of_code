@@ -1,0 +1,5 @@
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.DataAccess\bin\Debug\HomeSupply.DataAccess.dll
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.DataAccess\bin\Debug\HomeSupply.DataAccess.pdb
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.DataAccess\obj\Debug\HomeSupply.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.DataAccess\obj\Debug\HomeSupply.DataAccess.dll
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.DataAccess\obj\Debug\HomeSupply.DataAccess.pdb

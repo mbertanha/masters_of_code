@@ -1,0 +1,5 @@
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.Utils\obj\Debug\HomeSupply.Utils.csprojResolveAssemblyReference.cache
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.Utils\bin\Debug\HomeSupply.Utils.dll
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.Utils\bin\Debug\HomeSupply.Utils.pdb
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.Utils\obj\Debug\HomeSupply.Utils.dll
+D:\Projects\masters_of_code\HomeSupply\HomeSupply.Utils\obj\Debug\HomeSupply.Utils.pdb

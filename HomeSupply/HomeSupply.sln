@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply", "HomeSupply\HomeSupply.csproj", "{1613E8C8-8A12-4B28-9568-7B2CDB293CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply.DataAccess", "HomeSupply.DataAccess\HomeSupply.DataAccess.csproj", "{6D2653A4-255B-4320-920D-BB3B569D6A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply.Utils", "HomeSupply.Utils\HomeSupply.Utils.csproj", "{49669D12-4007-41EA-A300-B26E39D1E998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1613E8C8-8A12-4B28-9568-7B2CDB293CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1613E8C8-8A12-4B28-9568-7B2CDB293CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1613E8C8-8A12-4B28-9568-7B2CDB293CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1613E8C8-8A12-4B28-9568-7B2CDB293CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2653A4-255B-4320-920D-BB3B569D6A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2653A4-255B-4320-920D-BB3B569D6A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2653A4-255B-4320-920D-BB3B569D6A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2653A4-255B-4320-920D-BB3B569D6A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49669D12-4007-41EA-A300-B26E39D1E998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49669D12-4007-41EA-A300-B26E39D1E998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49669D12-4007-41EA-A300-B26E39D1E998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49669D12-4007-41EA-A300-B26E39D1E998}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
