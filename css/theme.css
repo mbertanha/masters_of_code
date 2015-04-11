@@ -1,0 +1,30 @@
+body {
+    font: normal 12px Arial;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.filter {
+    border: 1px solid;
+    float: left;
+    width: 20%;
+}
+
+.subcategories label {
+    display: block;
+}
+
+.catalog {
+    border: 1px solid;
+    float: left;
+    width: 58%;
+}
+
+.calendar {
+    border: 1px solid;
+    float: left;
+    width: 20%;
+}
