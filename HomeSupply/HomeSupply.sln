@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply.DataAccess", "Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply.Utils", "HomeSupply.Utils\HomeSupply.Utils.csproj", "{49669D12-4007-41EA-A300-B26E39D1E998}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSupply.Service", "HomeSupply.Service\HomeSupply.Service.csproj", "{6F565E9D-76D3-42BA-A4EF-EAC253E6C19B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{49669D12-4007-41EA-A300-B26E39D1E998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49669D12-4007-41EA-A300-B26E39D1E998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49669D12-4007-41EA-A300-B26E39D1E998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F565E9D-76D3-42BA-A4EF-EAC253E6C19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F565E9D-76D3-42BA-A4EF-EAC253E6C19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F565E9D-76D3-42BA-A4EF-EAC253E6C19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F565E9D-76D3-42BA-A4EF-EAC253E6C19B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
