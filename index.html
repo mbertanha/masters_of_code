@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Masters of code</title>
+    <title>Home Supply</title>
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-    <h1>Lets the game begin!</h1>
+    <div class="wrapper">
+        <div class="filter">
+            <h2>Filtrar</h2>
+            <div class="category products">
+                <h3>Produtos</h3>
+                <div class="subcategories">
+                    <label for="">
+                        <input type="checkbox" value="Kit Homem" /> Kit Homem
+                    </label>
+                    <label for="">
+                        <input type="checkbox" value="Kit Mulher" /> Kit Mulher
+                    </label>
+                    <label for="">
+                        <input type="checkbox" value="Kit Churrasco" /> Kit Churasco
+                    </label>
+                </div>
+            </div>
+            <div class="category services">
+                <h3>Serviços</h3>
+                <div class="subcategories">
+                    <label for="">
+                        <input type="checkbox" value="Limpar piscina" /> Limpar Piscina
+                    </label>
+                    <label for="">
+                        <input type="checkbox" value="Jardinagem" /> Jardinagem
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <h2>Catálogo</h2>
+            <div class="catalog-item">
+                <img src="img/catalog/img_churrasco.jpg" alt="Kit Churrasco" />
+                <h3>Kit Churrasco</h3>
+                <p>Carne, linguiça, carvão e cerveja.</p>
+                <p>11/04/2015</p>
+                <input type="checkbox" value="recorrente" />
+                <p>R$ 74,90</p>
+                <a href="#masterPass">Master Pass</a>
+            </div>
+
+            <div class="catalog-item">
+                <img src="img/catalog/img_piscina.jpg" alt="Piscina" />
+                <h3>Piscina</h3>
+                <p>Limpeza de piscina.</p>
+                <p>11/04/2015</p>
+                <input type="checkbox" value="recorrente" />
+                <p>R$ 99,90</p>
+                <a href="#masterPass">Master Pass</a>
+            </div>
+        </div>
+        <div class="calendar">
+            <h2>Agenda</h2>
+            <div class="calendar-item">
+                <h3>Kit Mulher</h3>
+                <p>13/04/2015</p>
+                <span>3 meses</span>
+            </div>
+
+            <div class="calendar-item">
+                <h3>Jardinagem</h3>
+                <p>17/04/2015</p>
+                <span>1 mês</span>
+            </div>
+
+            <div class="calendar-item">
+                <h3>Kit Homem</h3>
+                <p>27/04/2015</p>
+                <span>6 meses</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
