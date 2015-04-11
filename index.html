@@ -7,30 +7,31 @@
 </head>
 <body>
     <div class="wrapper">
+        <marquee style="font-size: 24px">Masters of code - Jukebox</marquee>
         <div class="filter">
             <h2>Filtrar</h2>
-            <div class="category products">
+            <div class="fiter-item products">
                 <h3>Produtos</h3>
                 <div class="subcategories">
                     <label for="">
-                        <input type="checkbox" value="Kit Homem" /> Kit Homem
+                        <input class="category" type="checkbox" value="1" /> Kit Homem
                     </label>
                     <label for="">
-                        <input type="checkbox" value="Kit Mulher" /> Kit Mulher
+                        <input class="category" type="checkbox" value="2" /> Kit Mulher
                     </label>
                     <label for="">
-                        <input type="checkbox" value="Kit Churrasco" /> Kit Churasco
+                        <input class="category" type="checkbox" value="3" /> Kit Churasco
                     </label>
                 </div>
             </div>
-            <div class="category services">
+            <div class="fiter-item services">
                 <h3>Serviços</h3>
                 <div class="subcategories">
                     <label for="">
-                        <input type="checkbox" value="Limpar piscina" /> Limpar Piscina
+                        <input class="category" type="checkbox" value="4" /> Limpar Piscina
                     </label>
                     <label for="">
-                        <input type="checkbox" value="Jardinagem" /> Jardinagem
+                        <input class="category" type="checkbox" value="5" /> Jardinagem
                     </label>
                 </div>
             </div>
@@ -42,9 +43,11 @@
                 <h3>Kit Churrasco</h3>
                 <p>Carne, linguiça, carvão e cerveja.</p>
                 <p>11/04/2015</p>
-                <input type="checkbox" value="recorrente" />
+                <label for="">
+                    <input type="checkbox" value="recorrente" /> Recorrente?
+                </label>
                 <p>R$ 74,90</p>
-                <a href="#masterPass">Master Pass</a>
+                <a class="button" href="#masterPass">Master Pass</a>
             </div>
 
             <div class="catalog-item">
@@ -52,9 +55,11 @@
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
                 <p>11/04/2015</p>
-                <input type="checkbox" value="recorrente" />
+                <label for="">
+                    <input type="checkbox" value="recorrente" /> Recorrente?
+                </label>
                 <p>R$ 99,90</p>
-                <a href="#masterPass">Master Pass</a>
+                <a class="button" href="#masterPass">Master Pass</a>
             </div>
         </div>
         <div class="calendar">
@@ -78,5 +83,9 @@
             </div>
         </div>
     </div>
+
+    <script src="js/jquery.1.11.2.min.js"></script>
+
+    <script src="js/filter.js"></script>
 </body>
 </html>

@@ -13,6 +13,10 @@ body {
     width: 20%;
 }
 
+.fiter-item {
+    padding: 23px 15px;
+}
+
 .subcategories label {
     display: block;
 }
@@ -23,8 +27,34 @@ body {
     width: 58%;
 }
 
+.catalog-item {
+    border: 1px solid;
+    display: table;
+    margin: 0 auto 13px;
+    padding: 23px 1.5%;
+    width: 96%;
+}
+
+.catalog-item img {
+    float: left;
+    margin-right: 15px;
+    max-width: 220px;
+}
+
+.catalog-item a.button {
+    border: 1px solid;
+    float: right;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+}
+
 .calendar {
     border: 1px solid;
     float: left;
     width: 20%;
+}
+
+.calendar-item {
+    padding: 23px 15px;
 }
