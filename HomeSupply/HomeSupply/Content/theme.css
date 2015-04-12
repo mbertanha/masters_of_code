@@ -231,7 +231,6 @@ h4 {
     font-size: 15px;
     margin-top: 4px;
     unicode-bidi: bidi-override;
-    direction: rtl;
 }
 
 .rating > span:before {
