@@ -11,5 +11,7 @@ $(document).ready(function () {
 	if ($("#itemComprado").val()) {
 	    $("#" + $("#itemComprado").val()).hide();
 	    $("#cat-" + $("#itemComprado").val()).show();
+	    $("#sc_btn_" + $("#itemComprado").val()).hide();
+	    $("#check-" + $("#itemComprado").val()).show();
 	}
 });
