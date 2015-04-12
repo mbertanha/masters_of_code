@@ -103,15 +103,22 @@ h4 {
     width: 100%;
 }
 
+.catalog-item .details {
+    float: left;
+    width: 61%;
+}
+
 .catalog-item img {
     float: left;
     margin-right: 18px;
     max-width: 220px;
+    width: 35%;
 }
 
 .catalog-item h3 {
     font-size: 33px;
     margin: 0 0 18px 0;
+    padding-top: 5px;
 }
 
 .catalog-item p {
@@ -131,22 +138,24 @@ h4 {
 }
 
 .catalog-item label {
+    float: left;
     height: 22px;
     line-height: 22px;
     margin: 10px 0 29px 18px;
 }
 
 .catalog-item p.price {
-    font-size: 33px;
-    margin-top: 13px;
+    float: left;
+    font-size: 23px;
+    line-height: 24px;
+    margin-top: 7px;
+    width: 155px;
 }
 
-.catalog-item a.button {
-    border: 1px solid;
+.catalog-item button {
     float: right;
-    padding: 5px;
+    padding: 0 30px;
     text-align: center;
-    width: 150px;
 }
 
 .calendar {
@@ -177,4 +186,23 @@ h4 {
 .calendar-item span {
     float: right;
     margin-right: 18px;
+}
+
+/* Rating */
+.rating {
+    float: right;
+    font-size: 15px;
+    margin-top: 4px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span:before {
+    color: #9E9E9E ;
+    content: "\2605";
+    position: absolute;
+}
+
+.rating > span.colored:before {
+    color: #F1C40F;
 }
