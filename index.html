@@ -48,8 +48,16 @@
                 <h3>Kit Churrasco</h3>
                 <p>Carne, linguiça, carvão e cerveja.</p>
                 <input type="text" value="11/04/2015" />
-				<input type="checkbox" value="recorrente" id="recorrent1" /> Recorrente?
-                <label for="recorrent1"></label>
+				<input type="checkbox" class="recorrente"  id="recorrent1" value="1"/> 
+				<label for="recorrent1">Recorrente</label>
+				<div class="hidden" id="frequencyGroup1">
+					<input name="frequencyGroup1" type="radio" id="frequency1" />
+					<label for="frequency1">1 Semana</label>
+					<input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+					<label for="frequency2">1 Mês</label>
+					<input name="frequencyGroup1" type="radio" id="frequency3" />
+					<label for="frequency3">3 Meses</label>
+				</div>
                 <p class="price">R$ 74,90</p>
                 <a class="button" href="#masterPass">Master Pass</a>
             </div>
@@ -59,8 +67,16 @@
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
                 <input type="text" value="11/04/2015" />
-				<input type="checkbox" value="recorrente" id="recorrent2" /> Recorrente?
-                <label for="recorrent2"></label>
+				<input type="checkbox" class="recorrente" id="recorrent2" value="2"/> 
+                <label for="recorrent2">Recorrente</label>
+				<div class="hidden" id="frequencyGroup2">
+					<input name="frequencyGroup2" type="radio" id="frequency4" />
+					<label for="frequency4">1 Semana</label>
+					<input name="frequencyGroup2" type="radio" id="frequency5" />
+					<label for="frequency5">1 Mês</label>
+					<input name="frequencyGroup2" type="radio" id="frequency6" />
+					<label for="frequency6">3 Meses</label>
+				</div>
                 <p class="price">R$ 99,90</p>
                 <a class="button" href="#masterPass">Master Pass</a>
                 <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
@@ -83,8 +99,16 @@
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
                 <p>11/04/2015</p>
-				<input type="checkbox" value="recorrente" id="recorrent3" /> Recorrente?
-                <label for="recorrent3"></label>
+				<input type="checkbox" class="recorrente" id="recorrent3" value="3" /> 
+                <label for="recorrent3">Recorrente</label>
+				<div class="hidden" id="frequencyGroup3">
+					<input name="frequencyGroup3" type="radio" id="frequency7" />
+					<label for="frequency7">1 Semana</label>
+					<input name="frequencyGroup3" type="radio" id="frequency8" />
+					<label for="frequency8">1 Mês</label>
+					<input name="frequencyGroup3" type="radio" id="frequency9" />
+					<label for="frequency9">3 Meses</label>
+				</div>
                 <p>R$ 99,90</p>
                 <a class="button" href="#masterPass">Master Pass</a>
             </div>
@@ -116,6 +140,7 @@
     <script type="text/javascript" src="js/jquery.1.11.2.min.js"></script>
     <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     <script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/catalog.js"></script>
     <!-- <script type="text/javascript" src="js/token.js"></script> -->
 </body>
 </html>
