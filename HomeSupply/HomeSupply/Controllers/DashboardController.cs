@@ -21,7 +21,7 @@ namespace HomeSupply.Controllers
                     ViewBag.Mensagem = "Ocorreu um erro durante o pagamento!";
                 }
             }
-            
+
             return View();
         }
         public bool Pagamento(string token, string amount, string name, string email, string reference)
@@ -42,8 +42,8 @@ namespace HomeSupply.Controllers
 
                 try
                 {
-                    payment = (Payment) api.Create(payment);
-
+                    payment = (Payment)api.Create(payment);
+                    this.enviarEmail();
                     return payment.PaymentStatus.Equals("APPROVED");
                 }
                 catch
@@ -80,13 +80,14 @@ namespace HomeSupply.Controllers
                 try
                 {
                     api.Create(customer);
+                    this.enviarEmail();
                 }
                 catch (Exception e)
                 {
                     return false;
                 }
 
-                return true;   
+                return true;
             }
         }
 
@@ -102,10 +103,28 @@ namespace HomeSupply.Controllers
 
                 return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return false;
             }
+        }
+
+        public void enviarEmail()
+        {
+            String mensagem = String.Empty;
+            Email email = new Email();
+            
+            if ( email.enviarEmail() )
+            {
+                mensagem = "Enviado com sucesso.";
+            }
+            
+            if (String.IsNullOrEmpty(mensagem))
+            {
+                mensagem = "Houve um erro ao enviar o email";
+            }
+
+            //return mensagem;
         }
 
     }
