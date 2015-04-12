@@ -231,7 +231,6 @@ h4 {
     font-size: 15px;
     margin-top: 4px;
     unicode-bidi: bidi-override;
-    direction: rtl;
 }
 
 .rating > span:before {
@@ -248,4 +247,10 @@ h4 {
     width: 160px;
     font-size: 16px;
     font-weight:bold;
+}
+
+.recorrente, .recorrente-item {
+    width: 140px;
+    float: left;
+    margin-right: 18px;
 }
