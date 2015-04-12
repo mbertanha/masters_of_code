@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HomeSupply.Utils
 {
@@ -16,5 +12,9 @@ namespace HomeSupply.Utils
     {
         public const String Currency = "BRL";
         public const String DescriptionPayment = "Pagamento Home supply";
+    }
+    public static class PaymentInfo
+    {
+        public const String PaymentSuccess = "Compra efetuada com sucesso!";
     }
 }

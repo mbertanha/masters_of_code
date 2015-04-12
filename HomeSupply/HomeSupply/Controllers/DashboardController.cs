@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using HomeSupply.Utils;
 using SimplifyCommerce.Payments;
@@ -11,46 +8,47 @@ namespace HomeSupply.Controllers
     public class DashboardController : Controller
     {
 
-        public ActionResult Index()
+        public ActionResult Index(string cardToken, string amount)
         {
-            ViewBag.Mensagem = "Olá mundo!";
+            //ViewBag.Mensagem = "Olá mundo!";
+            if (!String.IsNullOrEmpty(cardToken) && !String.IsNullOrEmpty(amount))
+            {
+                Pagamento(cardToken, amount);
+            }
+            
             return View();
         }
-
-        [HttpPost]
-        public ActionResult pagamento(String token, String amount)
+        public void Pagamento(string token, string amount)
         {
             PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
             PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
 
-            PaymentsApi paymentApi = new PaymentsApi();
+            PaymentsApi api = new PaymentsApi();
 
-            Authorization auth = new Authorization();
-            auth.Amount = long.Parse(amount);
-            auth.Currency = CurrencyInfo.Currency;
-            auth.Description = CurrencyInfo.DescriptionPayment;
-            //auth.Reference = "7a6ef6be31";
-            auth.Token = token;
+            Payment payment = new Payment();
+            payment.Amount = Convert.ToInt64("10");
+            payment.Currency = "USD";
+            payment.Description = "LearningSimplify";
+            payment.Reference = "7a6ef6be31";
+            payment.Token = token;
 
             try
             {
-                auth = (Authorization)paymentApi.Create(auth);
+                payment = (Payment)api.Create(payment);
 
-                if (!String.IsNullOrEmpty(auth.PaymentStatus))
+                if (!String.IsNullOrEmpty(payment.PaymentStatus))
                 {
-                    if (auth.PaymentStatus.Equals(""))
+                    if (payment.PaymentStatus.Equals(""))
                     {
-                        ViewBag.Mensagem = PaymentInfo.payment_success;
+                        ViewBag.Mensagem = PaymentInfo.PaymentSuccess;
                     }
                 }
             }
             catch (Exception e)
             {
-                ViewBag.Mensagem = PaymentInfo.payment_success;
+                ViewBag.Mensagem = PaymentInfo.PaymentSuccess;
                 Console.WriteLine(e.GetBaseException());
             }
-
-            return View();
         }
 
         private Boolean verifyLostStolenCard(String id)
