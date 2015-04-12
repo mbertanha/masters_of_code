@@ -81,3 +81,5 @@ D:\Projects\masters_of_code\HomeSupply\HomeSupply\bin\zh-Hans\System.Spatial.res
 D:\Projects\masters_of_code\HomeSupply\HomeSupply\bin\zh-Hant\System.Spatial.resources.dll
 D:\Projects\masters_of_code\HomeSupply\HomeSupply\obj\Debug\HomeSupply.dll
 D:\Projects\masters_of_code\HomeSupply\HomeSupply\obj\Debug\HomeSupply.pdb
+C:\Projetos\masters_of_code\HomeSupply\HomeSupply\obj\Debug\HomeSupply.csprojResolveAssemblyReference.cache
+C:\Projetos\masters_of_code\HomeSupply\HomeSupply\obj\Debug\HomeSupply.dll
