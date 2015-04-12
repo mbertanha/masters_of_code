@@ -46,6 +46,11 @@ h4 {
     margin: 17px 0;
 }
 
+.brand img {
+    margin-right: 10px;
+    float: left;
+}
+
 .brand span {
     color: #f1c40f;
 }
