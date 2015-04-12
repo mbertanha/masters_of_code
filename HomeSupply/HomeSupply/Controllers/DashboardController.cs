@@ -136,7 +136,7 @@ namespace HomeSupply.Controllers
                 mensagem = "Houve um erro ao enviar o email";
             }
 
-            ViewBag.Mensagem = mensagem;
+            Console.WriteLine(mensagem);
             //return mensagem;
         }
 
