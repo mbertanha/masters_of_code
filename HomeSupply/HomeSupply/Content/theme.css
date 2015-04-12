@@ -1,0 +1,245 @@
+body {
+    background: #FCFCFC;
+    font: normal 12px Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    display: table;
+    width: 100%;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 23px;
+    line-height: 24px;
+    margin: 0;
+    padding: 18px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.line {
+    display: table;
+    width: 100%;
+}
+
+.brand {
+    color: #c0392b;
+    float: left;
+    font: bold 23px Arial;
+    margin: 17px 0;
+}
+
+.brand img {
+    margin-right: 10px;
+    float: left;
+}
+
+.brand span {
+    color: #f1c40f;
+}
+
+.profile {
+    color: white;
+    float: right;
+    font: bold 13px/27px Arial;
+}
+
+.profile img {
+    margin: 8px 12px 8px 0;
+    vertical-align: middle;
+    width: 43px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.filter {
+    float: left;
+    margin-top: 84px;
+    width: 20%;
+}
+
+.filter-item h3 {
+    margin-left: 51px;
+}
+
+.subcategories {
+    margin-top: 18px;
+}
+
+.filter-item label {
+    color: #7A7A7A;
+    display: block;
+    margin-left: 18px;
+    margin-bottom: 23px;
+}
+
+.filter-item label input {
+    margin: 12px;
+    width: 30px;
+}
+
+.catalog {
+    float: left;
+    width: 59%;
+}
+
+.catalog h2 {
+    font-size: 33px;
+}
+
+.catalog-item {
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
+    display: table;
+    margin: 0 auto 18px;
+    padding: 12px;
+    width: 100%;
+}
+
+.catalog-item .details {
+    float: left;
+    width: 61%;
+}
+
+.catalog-item h3 p {
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.catalog-item img {
+    float: left;
+    margin-right: 18px;
+    max-width: 220px;
+    width: 35%;
+}
+
+.catalog-item h3 {
+    font-size: 23px;
+    line-height: 24px;
+    margin: 0 0 18px 0;
+    padding-top: 5px;
+}
+
+.catalog-item p {
+    font-size: 15px;
+    margin: 0 0 18px 0;
+}
+
+.dropdown-content li>a, 
+.dropdown-content li>span {
+    font-size: 15px;
+    padding: 8px 18px;
+}
+
+.catalog-item input[type=text] {
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+.catalog-item input[type=text]:focus {
+    border-bottom: 1px solid #C0392B;
+    box-shadow: 0 1px 0 0 #C0392B;
+}
+
+.catalog-item label {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 10px 0 29px 18px;
+}
+
+.catalog-item p.price {
+    float: left;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 7px;
+    width: 155px;
+}
+
+.catalog-item p.price span.real {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.catalog-item p.price span.cents {
+    font-size: 15px;
+    vertical-align: ;
+}
+
+.catalog-item button {
+    float: right;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.calendar {
+    float: left;
+    margin-top: 84px;
+    width: 20%;
+}
+
+.calendar h3 {
+    padding-left: 24px;
+}
+
+.calendar-item {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 18px 0 18px 24px;
+}
+
+.calendar-item h4 {
+    line-height: 20px;
+    margin: 0;
+}
+
+.calendar-item p {
+    color: #7A7A7A;
+    margin: 0;
+}
+
+.calendar-item span {
+    float: right;
+    margin-right: 18px;
+}
+
+/* Rating */
+.rating {
+    float: right;
+    font-size: 15px;
+    margin-top: 4px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span:before {
+    color: #9E9E9E ;
+    content: "\2605";
+    position: absolute;
+}
+
+.rating > span.colored:before {
+    color: #F1C40F;
+}
