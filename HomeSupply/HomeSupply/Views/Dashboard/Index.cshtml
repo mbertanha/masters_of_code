@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="~/Content/materialize.min.css">
 <head>
     <meta charset="UTF-8">
     <title>Home Supply</title>
+    <link rel="stylesheet" href="~/Content/materialize.min.css">
     <link rel="stylesheet" href="~/Content/theme.css">
 </head>
 <body>
@@ -72,7 +72,7 @@
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Beef"
                     data-description="Kit Churrasco"
-                    data-reference="1_MONTHLY"
+                    data-reference="1_"
                     data-amount="4890"
                     data-color="#12B830"
                     data-receipt="true"
@@ -84,7 +84,7 @@
                     class="comprar">
                 Comprar
             </button>
-            <img src="~/Images/check.png" id="check-1" class="hidden" style="width:50px!important; height: 48px!important; float:right"/>
+            <img src="~/Images/check.png" id="check-1" class="hidden" style="width:38px!important; height: 30px!important; float:right"/>
         </div>
     </div>
 
@@ -118,10 +118,10 @@
                 </select>
             </div>
             <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1" />
+                <div class="hidden">
+                    <input name="frequencyGroup1" type="radio"/>
                     <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                    <input name="frequencyGroup1" type="radio" class="hidden" />
                     <label for="frequency2">1 Ano</label>
                 </div>
             </div>
@@ -173,10 +173,10 @@
                 </select>
             </div>
             <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1" />
+                <div class="hidden">
+                    <input name="frequencyGroup1" type="radio"/>
                     <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                    <input name="frequencyGroup1" type="radio" class="hidden" />
                     <label for="frequency2">1 Ano</label>
                 </div>
             </div>
@@ -184,7 +184,7 @@
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Pool"
                     data-description="Piscina"
-                    data-reference="3_MONTHLY"
+                    data-reference="3_"
                     data-amount="3590"
                     data-color="#12B830"
                     data-receipt="true"
@@ -239,7 +239,7 @@
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Garden"
                     data-description="Jardinagem"
-                    data-reference="4_MONTHLY"
+                    data-reference="4_YEARLY"
                     data-amount="3590"
                     data-color="#12B830"
                     data-receipt="true"
@@ -271,7 +271,6 @@
         <h4>Kit Churrasco</h4>
         <p>
             17/04/2015
-            <span>6 meses</span>
         </p>
     </div>
 
@@ -279,7 +278,7 @@
         <h4>Despesa Mensal</h4>
         <p>
             17/04/2015
-            <span>6 meses</span>
+            <span>1 mes</span>
         </p>
     </div>
 
@@ -287,7 +286,6 @@
         <h4>Jardinagem</h4>
         <p>
             17/04/2015
-            <span>6 meses</span>
         </p>
     </div>
 
@@ -295,7 +293,7 @@
         <h4>Piscina</h4>
         <p>
             17/04/2015
-            <span>6 meses</span>
+            <span>1 ano</span>
         </p>
     </div>
 </div>
@@ -306,7 +304,7 @@
     <input type="hidden" id="itemComprado" value="@ViewBag.Id.ToString()">    
 }
 
-<script type="text/javascript" src="~/Scripts/jquery.1.11.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.1.11.2.min.js"></script>
     <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     <script type="text/javascript" src="~/Scripts/filter.js"></script>
     <script type="text/javascript" src="~/Scripts/catalog.js"></script>
