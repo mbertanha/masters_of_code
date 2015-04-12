@@ -249,3 +249,9 @@ h4 {
     font-size: 16px;
     font-weight:bold;
 }
+
+.recorrente, .recorrente-item {
+    width: 140px;
+    float: left;
+    margin-right: 18px;
+}

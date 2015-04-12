@@ -55,29 +55,23 @@
             </h3>
             <p>Carne, linguiça, carvão e cerveja.</p>
             <div class="line">
-                <!-- <input type="date" class="datepicker" id="dataRecorrente1" value="12 Abril, 2015"> -->
-                <!-- <input type="checkbox" class="recorrente" id="recorrent1" value="1">
-                <label for="recorrent1">Recorrente</label> -->
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">Sem recorrência</a></li>
-                    <li><a href="#!">Mensal</a></li>
-                    <li><a href="#!">Anual</a></li>
-                </ul>
-                <a class="btn dropdown-button" href="#!" data-activates="dropdown1">Recorrente<i class="mdi-navigation-arrow-drop-down right"></i></a>
-            </div>
-            <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1"/>
-                    <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2"/>
-                    <label for="frequency2">1 Ano</label>
-                </div>
+                <select class="browser-default recorrente" id="recorrente1">
+                    <option value="1" selected>Sem recorrência</option>
+                    <option value="2">Mensal</option>
+                    <option value="3">Anual</option>
+                </select>
+                <select class="browser-default recorrente-item diaRecorrente" id="diaRecorrente1">
+                    <option value="" selected>Escolha um dia</option>
+                    <option value="1">1</option>
+                    <option value="2">10</option>
+                    <option value="3">20</option>
+                </select>
             </div>
             <p class="price">R$ <span class="real">48,</span><span class="cents">90</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Beef"
                     data-description="Kit Churrasco"
-                    data-reference="1_"
+                    data-reference="1_MONTHLY"
                     data-amount="4890"
                     data-color="#12B830"
                     data-receipt="true"
@@ -109,23 +103,23 @@
             </h3>
             <p>Despesa para mantimento mensal da casa..</p>
             <div class="line">
-                <input type="date" class="datepicker" id="dataRecorrente1" value="12 Abril, 2015">
-                <input type="checkbox" class="recorrente" id="recorrent1" value="1">
-                <label for="recorrent1">Recorrente</label>
-            </div>
-            <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1"/>
-                    <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2"/>
-                    <label for="frequency2">1 Ano</label>
-                </div>
+                <select class="browser-default recorrente" id="recorrente2">
+                    <option value="1" selected>Sem recorrência</option>
+                    <option value="2">Mensal</option>
+                    <option value="3">Anual</option>
+                </select>
+                <select class="browser-default recorrente-item diaRecorrente" id="diaRecorrente2">
+                    <option value="" selected>Escolha um dia</option>
+                    <option value="1">1</option>
+                    <option value="2">10</option>
+                    <option value="3">20</option>
+                </select>
             </div>
             <p class="price">R$ <span class="real">74,</span><span class="cents">90</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Market"
                     data-description="Despesa Mensal"
-                    data-reference="2_"
+                    data-reference="2_MONTHLY"
                     data-amount="7490"
                     data-color="#12B830"
                     data-receipt="true"
@@ -155,23 +149,23 @@
             </h3>
             <p>Limpeza de Piscina.</p>
             <div class="line">
-                <input type="date" class="datepicker" id="dataRecorrente2" value="12 Abril, 2015">
-                <input type="checkbox" class="recorrente" id="recorrent2" value="2">
-                <label for="recorrent2">Recorrente</label>
-            </div>
-            <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1"/>
-                    <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2"/>
-                    <label for="frequency2">1 Ano</label>
-                </div>
+                <select class="browser-default recorrente" id="recorrente3">
+                    <option value="1" selected>Sem recorrência</option>
+                    <option value="2">Mensal</option>
+                    <option value="3">Anual</option>
+                </select>
+                <select class="browser-default recorrente-item diaRecorrente" id="diaRecorrente3">
+                    <option value="" selected>Escolha um dia</option>
+                    <option value="1">1</option>
+                    <option value="2">10</option>
+                    <option value="3">20</option>
+                </select>
             </div>
             <p class="price">R$ <span class="real">35,</span><span class="cents">99</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Pool"
                     data-description="Piscina"
-                    data-reference="3_"
+                    data-reference="3_MONTHLY"
                     data-amount="3590"
                     data-color="#12B830"
                     data-receipt="true"
@@ -201,23 +195,23 @@
             </h3>
             <p>Serviço de Jardinagem.</p>
             <div class="line">
-                <input type="date" class="datepicker" id="dataRecorrente3" value="12 Abril, 2015">
-                <input type="checkbox" class="recorrente" id="recorrent3" value="3">
-                <label for="recorrent3">Recorrente</label>
-            </div>
-            <div class="line">
-                <div class="hidden" id="frequencyGroup1">
-                    <input name="frequencyGroup1" type="radio" id="frequency1"/>
-                    <label for="frequency1">1 Mês</label>
-                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2"/>
-                    <label for="frequency2">1 Ano</label>
-                </div>
+                <select class="browser-default recorrente" id="recorrente4">
+                    <option value="1" selected>Sem recorrência</option>
+                    <option value="2">Mensal</option>
+                    <option value="3">Anual</option>
+                </select>
+                <select class="browser-default recorrente-item diaRecorrente" id="diaRecorrente4">
+                    <option value="" selected>Escolha um dia</option>
+                    <option value="1">1</option>
+                    <option value="2">10</option>
+                    <option value="3">20</option>
+                </select>
             </div>
             <p class="price">R$ <span class="real">34,</span><span class="cents">97</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Garden"
                     data-description="Jardinagem"
-                    data-reference="4_"
+                    data-reference="4_MONTHLY"
                     data-amount="3590"
                     data-color="#12B830"
                     data-receipt="true"
