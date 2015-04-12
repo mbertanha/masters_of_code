@@ -31,6 +31,8 @@ namespace HomeSupply.Controllers
                 }
             }
 
+            ViewBag.Id = 1;
+
             return View();
         }
         public bool Pagamento(string token, string amount, string name, string email, string frequency)
@@ -140,26 +142,26 @@ namespace HomeSupply.Controllers
             //return mensagem;
         }
 
-        public ActionResult ExcluirAgendamento(String idAuth)
-        {
-            PaymentsApi paymentApi = new PaymentsApi();
-            PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
-            PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
+        //public ActionResult ExcluirAgendamento(String idAuth)
+        //{
+        //    PaymentsApi paymentApi = new PaymentsApi();
+        //    PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
+        //    PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
 
-            Payment payment = new Payment();
+        //    Payment payment = new Payment();
 
-            payment.Id = idAuth;
-            try
-            {
-                payment = (Payment)paymentApi.Delete(payment);
-                ViewBag.Mensagem = "Pagamento removido com sucesso!";
-            }
-            catch (Exception e)
-            {
-                ViewBag.Mensagem = "Ocorreu um erro ao excluir a autorização.";
-            }
-            return View();
-        }
+        //    payment.Id = idAuth;
+        //    try
+        //    {
+        //        payment = (Payment)paymentApi.Delete(payment);
+        //        ViewBag.Mensagem = "Pagamento removido com sucesso!";
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        ViewBag.Mensagem = "Ocorreu um erro ao excluir a autorização.";
+        //    }
+        //    return View();
+        //}
 
     }
 }
