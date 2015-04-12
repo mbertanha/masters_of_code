@@ -11,6 +11,10 @@ header {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 .brand {
     color: #c0392b;
     float: left;
@@ -75,7 +79,7 @@ header {
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
     display: table;
-    margin: 0 auto 6px;
+    margin: 0 auto 0;
     padding: 23px 1.5%;
     width: 96%;
 }
@@ -96,7 +100,7 @@ header {
     margin: 0 0 13px 0;
 }
 
-.catalog-item input {
+.catalog-item input[type=text] {
     border-bottom: 2px solid #C0392B;
     border-left: 0px;
     border-right: 0px;
@@ -104,7 +108,7 @@ header {
     font-size: 15px;
     margin: 0 0 13px 0;
     padding: 10px 13px;
-    width: 100px;
+    width: 90px;
 }
 
 .catalog-item p.price {
