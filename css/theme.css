@@ -82,6 +82,7 @@ h4 {
 }
 
 .filter-item label {
+    color: #7A7A7A;
     display: block;
     margin-left: 18px;
     margin-bottom: 23px;
@@ -115,6 +116,11 @@ h4 {
 .catalog-item .details {
     float: left;
     width: 61%;
+}
+
+.catalog-item h3 p {
+    color: #7A7A7A;
+    margin: 0;
 }
 
 .catalog-item img {
