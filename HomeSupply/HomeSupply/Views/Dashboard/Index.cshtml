@@ -1,16 +1,263 @@
-﻿<script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
+﻿<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="~/Content/materialize.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Supply</title>
+    <link rel="stylesheet" href="~/Content/theme.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <span class="brand"><img src="~/Images/icon-cart.png" />Home <span>Supply</span></span>
+            <div class="profile">
+                <img src="~/Images/profile.jpg" alt="Luís Felipe" />
+                Luís Felipe
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="filter">
+            <!-- <h2>Filtrar</h2> -->
+            <div class="filter-item products">
+                <h3>Produtos</h3>
+                <div class="subcategories">
+                    <input class="category" type="checkbox" value="1" id="subcategory1" />
+                    <label for="subcategory1">Utilidades Domesticas</label>
+                    <input class="category" type="checkbox" value="2" id="subcategory2" />
+                    <label for="subcategory2">Produtos Gerais</label>
+                </div>
+            </div>
+            <div class="filter-item services">
+                <h3>Serviços</h3>
+                <div class="subcategories">
+                    <input class="category" type="checkbox" value="3" id="subcategory3" />
+                    <label for="subcategory3">Limpeza de Piscina</label>
+                    <input class="category" type="checkbox" value="4" id="subcategory4" />
+                    <label for="subcategory4">Jardinagem</label>
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <h2>Catálogo</h2>
+            <div class="catalog-item" category-id="1">
+                <img src="~/Images/catalog/img_churrasco.jpg" alt="Kit Churrasco" />
+                <div class="details">
+                    <h3>
+                        Kit Churrasco
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>
+                    <p>Carne, linguiça, carvão e cerveja.</p>
+                    <div class="line">
+                        <!-- <input type="date" class="datepicker" id="dataRecorrente1" value="12 Abril, 2015"> -->
+                        <!-- <input type="checkbox" class="recorrente"  id="recorrent1" value="1">
+                        <label for="recorrent1">Recorrente</label> -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Sem recorrência</a></li>
+                            <li><a href="#!">Mensal</a></li>
+                            <li><a href="#!">Anual</a></li>
+                        </ul>
+                        <a class="btn dropdown-button" href="#!" data-activates="dropdown1">Recorrente<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </div>
+                    <div class="line">
+                        <div class="hidden" id="frequencyGroup1">
+                            <input name="frequencyGroup1" type="radio" id="frequency1" />
+                            <label for="frequency1">1 Mês</label>
+                            <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                            <label for="frequency2">1 Ano</label>
+                        </div>
+                    </div>
+                    <p class="price">R$ 48,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                            data-name="Master Beef"
+                            data-description="Kit Churrasco"
+                            data-reference=""
+                            data-amount="4890"
+                            data-color="#12B830"
+                            data-receipt="true"
+                            data-masterpass="true"
+                            data-redirect-url="http://localhost:64741"
+                            data-operation="create.token"
+                            id="sc_btn_1"
+                            type="button">
+                        Comprar
+                    </button>
+                </div>
+            </div>
 
-<button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
-        data-name="Jasmine Green Tea"
-        data-description="Smooth tea with a rich jasmine bouquet"
-        data-reference="MONTHLY"
-        data-amount="3000"
-        data-color="#12B830"
-        data-receipt="true"
-        data-masterpass="true"
-        data-redirect-url="http://localhost:64741"
-        data-operation="create.token"
-        id="sc_btn_1428789625543"
-        type="button">
-    Buy
-</button>
+
+            <div class="catalog-item" category-id="1">
+                <img src="~/Images/catalog/groceries.jpg" alt="Despesa Mensal" />
+                <div class="details">
+                    <h3>
+                        Despesa Mensal
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                        <p class="supplyer">Masters os code</p>
+                    </h3>
+                    <p>Despesa para mantimento mensal da casa..</p>
+                    <div class="line">
+                        <input type="date" class="datepicker" id="dataRecorrente1" value="12 Abril, 2015">
+                        <input type="checkbox" class="recorrente" id="recorrent1" value="1">
+                        <label for="recorrent1">Recorrente</label>
+                    </div>
+                    <div class="line">
+                        <div class="hidden" id="frequencyGroup1">
+                            <input name="frequencyGroup1" type="radio" id="frequency1" />
+                            <label for="frequency1">1 Mês</label>
+                            <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                            <label for="frequency2">1 Ano</label>
+                        </div>
+                    </div>
+                    <p class="price">R$ <span class="real">74,</span><span class="cents">90</span></p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                            data-name="Master Market"
+                            data-description="Despesa Mensal"
+                            data-reference=""
+                            data-amount="7490"
+                            data-color="#12B830"
+                            data-receipt="true"
+                            data-masterpass="true"
+                            data-redirect-url="http://localhost:64741"
+                            data-operation="create.token"
+                            id="sc_btn_2"
+                            type="button">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+            <div class="catalog-item" category-id="3">
+                <img src="~/Images/catalog/img_piscina.jpg" alt="Limpeza de Piscina" />
+                <div class="details">
+                    <h3>
+                        Piscina
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>
+                    <p>Limpeza de Piscina.</p>
+                    <div class="line">
+                        <input type="date" class="datepicker" id="dataRecorrente2" value="12 Abril, 2015">
+                        <input type="checkbox" class="recorrente" id="recorrent2" value="2">
+                        <label for="recorrent2">Recorrente</label>
+                    </div>
+                    <div class="line">
+                        <div class="hidden" id="frequencyGroup1">
+                            <input name="frequencyGroup1" type="radio" id="frequency1" />
+                            <label for="frequency1">1 Mês</label>
+                            <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                            <label for="frequency2">1 Ano</label>
+                        </div>
+                    </div>
+                    <p class="price">R$ 35,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                            data-name="Master Pool"
+                            data-description="Piscina"
+                            data-reference=""
+                            data-amount="3590"
+                            data-color="#12B830"
+                            data-receipt="true"
+                            data-masterpass="true"
+                            data-redirect-url="http://localhost:64741"
+                            data-operation="create.token"
+                            id="sc_btn_3"
+                            type="button">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+            <div class="catalog-item" category-id="4">
+                <img src="~/Images/catalog/jardinagem.jpg" alt="Serviço de Jardinagem" />
+                <div class="details">
+                    <h3>
+                        Jardinagem
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>
+                    <p>Serviço de Jardinagem.</p>
+                    <div class="line">
+                        <input type="date" class="datepicker" id="dataRecorrente3" value="12 Abril, 2015">
+                        <input type="checkbox" class="recorrente" id="recorrent3" value="3">
+                        <label for="recorrent3">Recorrente</label>
+                    </div>
+                    <div class="line">
+                        <div class="hidden" id="frequencyGroup1">
+                            <input name="frequencyGroup1" type="radio" id="frequency1" />
+                            <label for="frequency1">1 Mês</label>
+                            <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                            <label for="frequency2">1 Ano</label>
+                        </div>
+                    </div>
+                    <p class="price">R$ 35,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                            data-name="Master Garden"
+                            data-description="Jardinagem"
+                            data-reference=""
+                            data-amount="3590"
+                            data-color="#12B830"
+                            data-receipt="true"
+                            data-masterpass="true"
+                            data-redirect-url="http://localhost:64741"
+                            data-operation="create.token"
+                            id="sc_btn_4"
+                            type="button">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="calendar">
+            <h3>Agenda</h3>
+            <div class="calendar-item">
+                <h4>Kit Mulher</h4>
+                <p>
+                    13/04/2015
+                    <span>6 meses</span>
+                </p>
+            </div>
+
+            <div class="calendar-item">
+                <h4>Jardinagem</h4>
+                <p>
+                    17/04/2015
+                    <span>6 meses</span>
+                </p>
+            </div>
+
+            <div class="calendar-item">
+                <h4>Kit Homem</h4>
+                <p>
+                    27/04/2015
+                    <span>6 meses</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/Scripts/jquery.1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
+    <script type="text/javascript" src="~/Scripts/filter.js"></script>
+    <script type="text/javascript" src="~/Scripts/catalog.js"></script>
+    <script type="text/javascript" src="~/Scripts/materialize.js"></script>
+</body>
+</html>
