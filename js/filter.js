@@ -1,7 +1,7 @@
 
     // Filter Items by Category Id
     function applyFilterByCategory(categoryFilterId) {
-        $('.catalog-item[category-id=' + categoryFilterId + ']').show();    
+        $('.catalog-item[category-id=' + categoryFilterId + ']').show();
     };
     
     // Expand Recurrence
