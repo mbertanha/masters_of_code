@@ -18,20 +18,57 @@ namespace HomeSupply.Controllers
         }
 
         [HttpPost]
-        public ActionResult pagamento()
+        public ActionResult pagamento(String token, String amount)
         {
+            PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
+            PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
+
+            PaymentsApi paymentApi = new PaymentsApi();
+
+            Authorization auth = new Authorization();
+            auth.Amount = long.Parse(amount);
+            auth.Currency = CurrencyInfo.Currency;
+            auth.Description = CurrencyInfo.DescriptionPayment;
+            //auth.Reference = "7a6ef6be31";
+            auth.Token = token;
 
             try
             {
-                
+                auth = (Authorization)paymentApi.Create(auth);
+
+                if (!String.IsNullOrEmpty(auth.PaymentStatus))
+                {
+                    if (auth.PaymentStatus.Equals(""))
+                    {
+                        ViewBag.Mensagem = PaymentInfo.payment_success;
+                    }
+                }
             }
             catch (Exception e)
             {
-                ViewBag.Mensagem = "Compra efetuada com sucesso";
+                ViewBag.Mensagem = PaymentInfo.payment_success;
                 Console.WriteLine(e.GetBaseException());
             }
 
             return View();
+        }
+
+        private Boolean verifyLostStolenCard(String id)
+        {
+            PaymentsApi paymentApi = new PaymentsApi();
+
+            CardToken cardToken = (CardToken)paymentApi.Find(typeof(CardToken), id);
+
+            try
+            {
+                //CODE API LOST STOLEN
+
+                return true;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
         }
 
     }
