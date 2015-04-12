@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<link rel="stylesheet" href="css/materialize.min.css">
- <head>
-    <meta charset="UTF-8">
+ <head>    <meta charset="UTF-8">
     <title>Home Supply</title>
     <link rel="stylesheet" href="css/theme.css">
 </head>
@@ -22,20 +21,20 @@
             <div class="filter-item products">
                 <h3>Produtos</h3>
                 <div class="subcategories">
-					<input class="category" type="checkbox" value="1" id="subcategory1" /> 
-					<label for="subcategory1">Kit Homem</label>
-					<input class="category" type="checkbox" value="2" id="subcategory2" /> 
-					<label for="subcategory2">Kit Mulher</label>
-					<input class="category" type="checkbox" value="3" id="subcategory3" /> 
-					<label for="subcategory3">Kit Churasco</label>
+                    <input class="category" type="checkbox" value="1" id="subcategory1" /> 
+                    <label for="subcategory1">Kit Homem</label>
+                    <input class="category" type="checkbox" value="2" id="subcategory2" /> 
+                    <label for="subcategory2">Kit Mulher</label>
+                    <input class="category" type="checkbox" value="3" id="subcategory3" /> 
+                    <label for="subcategory3">Kit Churasco</label>
                 </div>
             </div>
             <div class="filter-item services">
                 <h3>Serviços</h3>
                 <div class="subcategories">
-					<input class="category" type="checkbox" value="4" id="subcategory4" /> 
+                    <input class="category" type="checkbox" value="4" id="subcategory4" /> 
                     <label for="subcategory4">Limpar Piscina</label>
-					<input class="category" type="checkbox" value="5" id="subcategory5" /> 
+                    <input class="category" type="checkbox" value="5" id="subcategory5" /> 
                     <label for="subcategory5">Jardinagem</label>
                 </div>
             </div>
@@ -44,88 +43,119 @@
             <h2>Catálogo</h2>
             <div class="catalog-item" category-id="1">
                 <img src="img/catalog/img_churrasco.jpg" alt="Kit Churrasco" />
-                <h3>Kit Churrasco</h3>
-                <p>Carne, linguiça, carvão e cerveja.</p>
-				<label for="dataRecorrente1" class="">Data</label>
-                <input type="date" class="datepicker" id="dataRecorrente1">
-				<input type="checkbox" class="recorrente"  id="recorrent1" value="1">
-				<label for="recorrent1">Recorrente</label>
-				<div class="hidden" id="frequencyGroup1">
-					<input name="frequencyGroup1" type="radio" id="frequency1" />
-					<label for="frequency1">1 Mês</label>
-					<input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
-					<label for="frequency2">1 Ano</label>
-				</div>
-                <p class="price">R$ 74,90</p>
-                <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
-				   data-name="Jasmine Green Tea"
-				   data-description="Smooth tea with a rich jasmine bouquet"
-				   data-reference="99999"
-				   data-amount="3000"
-				   data-color="#12B830"
-				   data-receipt="true"
-				   data-masterpass="true"
-				   data-redirect-url="http://localhost:64741"
-				   data-operation="create.token"
-				   id="sc_btn_1428789625543"
-				   type="button">Buy</button>
+                <div class="details">
+                    <h3>
+                        Kit Churrasco
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>  
+                    <p>Carne, linguiça, carvão e cerveja.</p>
+					<input type="date" class="datepicker" id="dataRecorrente1" value="12 Abril, 2015">
+                    <input type="checkbox" class="recorrente"  id="recorrent1" value="1">
+                    <label for="recorrent1">Recorrente</label>
+                    <div class="hidden" id="frequencyGroup1">
+                        <input name="frequencyGroup1" type="radio" id="frequency1" />
+                        <label for="frequency1">1 Mês</label>
+                        <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                        <label for="frequency2">1 Ano</label>
+                    </div>
+                    <p class="price">R$ 74,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                       data-name="Jasmine Green Tea"
+                       data-description="Smooth tea with a rich jasmine bouquet"
+                       data-reference="99999"
+                       data-amount="3000"
+                       data-color="#12B830"
+                       data-receipt="true"
+                       data-masterpass="true"
+                       data-redirect-url="http://localhost:64741"
+                       data-operation="create.token"
+                       id="sc_btn_1428789625543"
+                       type="button">Comprar</button>
+                </div>
             </div>
             <div class="catalog-item" category-id="1">
                 <img src="img/catalog/img_piscina.jpg" alt="Piscina" />
-                <h3>Piscina</h3>
-                <p>Limpeza de piscina.</p>
-                <label for="dataRecorrente2" class="">Data</label>
-                <input type="date" class="datepicker" id="dataRecorrente2">
-				<input type="checkbox" class="recorrente" id="recorrent2" value="2"/> 
-                <label for="recorrent2">Recorrente</label>
-				<div class="hidden" id="frequencyGroup2">
-					<input name="frequencyGroup2" type="radio" id="frequency3" />
-					<label for="frequency3">1 Mês</label>
-					<input name="frequencyGroup2" type="radio" id="frequency4" />
-					<label for="frequency4">1 Ano</label>
-				</div>
-                <p class="price">R$ 99,90</p>
-                <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
-				   data-name="Jasmine Green Tea"
-				   data-description="Smooth tea with a rich jasmine bouquet"
-				   data-reference="99999"
-				   data-amount="3000"
-				   data-color="#12B830"
-				   data-receipt="true"
-				   data-masterpass="true"
-				   data-redirect-url="http://localhost:64741"
-				   data-operation="create.token"
-				   id="sc_btn_1428789625543"
-				   type="button">Buy</button>
+                <div class="details">
+                    <h3>
+                        Piscina
+                        <div class="rating">
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>
+                    <p>Limpeza de piscina.</p>
+					<input type="date" class="datepicker" id="dataRecorrente2" value="12 Abril, 2015">
+                    <input type="checkbox" class="recorrente" id="recorrent2" value="2"/> 
+                    <label for="recorrent2">Recorrente</label>
+                    <div class="hidden" id="frequencyGroup2">
+                        <input name="frequencyGroup2" type="radio" id="frequency3" />
+                        <label for="frequency3">1 Mês</label>
+                        <input name="frequencyGroup2" type="radio" id="frequency4" />
+                        <label for="frequency4">1 Ano</label>
+                    </div>
+                    <p class="price">R$ 99,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                       data-name="Jasmine Green Tea"
+                       data-description="Smooth tea with a rich jasmine bouquet"
+                       data-reference="99999"
+                       data-amount="3000"
+                       data-color="#12B830"
+                       data-receipt="true"
+                       data-masterpass="true"
+                       data-redirect-url="http://localhost:64741"
+                       data-operation="create.token"
+                       id="sc_btn_1428789625543"
+                       type="button">Comprar</button>
+                </div>
             </div>
 			<div class="catalog-item" category-id="2">
-                <h3>Piscina</h3>
-                <p>Limpeza de piscina.</p>
-                <label for="dataRecorrente3" class="">Data</label>	
-                <input type="date" class="datepicker" id="dataRecorrente3">
-				<input type="checkbox" class="recorrente" id="recorrent3" value="3" /> 
-                <label for="recorrent3">Recorrente</label>
-				<div class="hidden" id="frequencyGroup3">
-					<input name="frequencyGroup3" type="radio" id="frequency5" />
-					<label for="frequency5">1 Mês</label>
-					<input name="frequencyGroup3" type="radio" id="frequency6" />
-					<label for="frequency6">1 Ano</label>
-				</div>
-                <p>R$ 99,90</p>
-                <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
-				   data-name="Jasmine Green Tea"
-				   data-description="Smooth tea with a rich jasmine bouquet"
-				   data-reference="99999"
-				   data-amount="3000"
-				   data-color="#12B830"
-				   data-receipt="true"
-				   data-masterpass="true"
-				   data-redirect-url="http://localhost:64741"
-				   data-operation="create.token"
-				   id="sc_btn_1428789625543"
-				   type="button">Buy</button>
-		    </div>
-	    </div>
+                <img src="img/catalog/img_piscina.jpg" alt="Piscina" />
+                <div class="details">
+                    <h3>
+                        Piscina
+                        <div class="rating">
+                            <span>☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                            <span class="colored">☆</span>
+                        </div>
+                    </h3>
+                    <p>Limpeza de piscina.</p>
+					<input type="date" class="datepicker" id="dataRecorrente3" value="12 Abril, 2015">
+                    <input type="checkbox" class="recorrente" id="recorrent3" value="3" /> 
+                    <label for="recorrent3">Recorrente</label>
+                    <div class="hidden" id="frequencyGroup3">
+                        <input name="frequencyGroup3" type="radio" id="frequency5" />
+                        <label for="frequency5">1 Mês</label>
+                        <input name="frequencyGroup3" type="radio" id="frequency6" />
+                        <label for="frequency6">1 Ano</label>
+                    </div>
+                    <p class="price">R$ 99,90</p>
+                    <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+                       data-name="Jasmine Green Tea"
+                       data-description="Smooth tea with a rich jasmine bouquet"
+                       data-reference="99999"
+                       data-amount="3000"
+                       data-color="#12B830"
+                       data-receipt="true"
+                       data-masterpass="true"
+                       data-redirect-url="http://localhost:64741"
+                       data-operation="create.token"
+                       id="sc_btn_1428789625543"
+                       type="button">Comprar</button>
+                </div>
+            </div>
+        </div>
         <div class="calendar">
             <h3>Agenda</h3>
             <div class="calendar-item">
@@ -157,7 +187,7 @@
     <script type="text/javascript" src="js/jquery.1.11.2.min.js"></script>
     <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     <script type="text/javascript" src="js/filter.js"></script>
-	<script type="text/javascript" src="js/catalog.js"></script>
+    <script type="text/javascript" src="js/catalog.js"></script>
 	<script src="js/materialize.js"></script>
     <!-- <script type="text/javascript" src="js/token.js"></script> -->
 </body>
