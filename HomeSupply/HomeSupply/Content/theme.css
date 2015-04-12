@@ -36,6 +36,7 @@ h4 {
 
 .line {
     display: table;
+    margin-bottom: 18px;
     width: 100%;
 }
 
