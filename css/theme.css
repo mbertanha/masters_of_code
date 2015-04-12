@@ -82,6 +82,7 @@ h4 {
 }
 
 .filter-item label {
+    color: #7A7A7A;
     display: block;
     margin-left: 18px;
     margin-bottom: 23px;
@@ -97,13 +98,17 @@ h4 {
     width: 59%;
 }
 
+.catalog h2 {
+    font-size: 33px;
+}
+
 .catalog-item {
     background: white;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
     display: table;
-    margin: -1px auto 0;
+    margin: 0 auto 18px;
     padding: 12px;
     width: 100%;
 }
@@ -111,6 +116,11 @@ h4 {
 .catalog-item .details {
     float: left;
     width: 61%;
+}
+
+.catalog-item h3 p {
+    color: #7A7A7A;
+    margin: 0;
 }
 
 .catalog-item img {
@@ -121,7 +131,8 @@ h4 {
 }
 
 .catalog-item h3 {
-    font-size: 33px;
+    font-size: 23px;
+    line-height: 24px;
     margin: 0 0 18px 0;
     padding-top: 5px;
 }
@@ -129,6 +140,12 @@ h4 {
 .catalog-item p {
     font-size: 15px;
     margin: 0 0 18px 0;
+}
+
+.dropdown-content li>a, 
+.dropdown-content li>span {
+    font-size: 15px;
+    padding: 8px 18px;
 }
 
 .catalog-item input[type=text] {
@@ -151,10 +168,20 @@ h4 {
 
 .catalog-item p.price {
     float: left;
-    font-size: 23px;
+    font-size: 15px;
     line-height: 24px;
     margin-top: 7px;
     width: 155px;
+}
+
+.catalog-item p.price span.real {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.catalog-item p.price span.cents {
+    font-size: 15px;
+    vertical-align: ;
 }
 
 .catalog-item button {
