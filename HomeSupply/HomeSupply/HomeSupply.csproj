@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SimplifySDK">
-      <HintPath>..\..\..\..\Users\Bertanha\Documents\Visual Studio 2013\Projects\LearningSimplifyIntegration\LearningSimplifyIntegration\bin\SimplifySDK.dll</HintPath>
+      <HintPath>bin\SimplifySDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -203,6 +203,7 @@
     <Content Include="Images\catalog\img_churrasco.jpg" />
     <Content Include="Images\catalog\img_piscina.jpg" />
     <Content Include="Images\catalog\jardinagem.jpg" />
+    <Content Include="Images\check.png" />
     <Content Include="Images\icon-cart.png" />
     <Content Include="Images\profile.jpg" />
     <Content Include="Scripts\catalog.js" />
