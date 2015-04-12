@@ -6,6 +6,7 @@ namespace HomeSupply.Utils
     {
         public const string PublicKey = "sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk";
         public const string PrivateKey = "o5d+wNUrGQ5NoyOdQYYOmMpPDkCmyRn9Zq6hMzt6+055YFFQL0ODSXAOkNtXTToq";
+        public const String sandbox = "https://sandbox.api.mastercard.com/fraud/loststolen/v1/account-inquiry?Format=XML";
     }
 
     public static class CurrencyInfo
