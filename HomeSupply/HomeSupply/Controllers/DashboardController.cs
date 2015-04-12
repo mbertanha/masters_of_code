@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using HomeSupply.Utils;
 using SimplifyCommerce.Payments;
@@ -12,8 +13,16 @@ namespace HomeSupply.Controllers
         {
             if (!String.IsNullOrEmpty(cardToken) && !String.IsNullOrEmpty(amount) && !String.IsNullOrEmpty(name) && !String.IsNullOrEmpty(email))
             {
-                if (Pagamento(cardToken, amount, name, email, reference))
+                var array = reference.Split('_');
+                string id = array[0];
+                string frequency = string.Empty;
+                if (array.Count() > 1)
                 {
+                    frequency = array[1];
+                }
+                if (Pagamento(cardToken, amount, name, email, frequency))
+                {
+                    ViewBag.Id = id;
                     ViewBag.Mensagem = "Pagamento Realizado com Sucesso!";
                 }
                 else
@@ -24,7 +33,7 @@ namespace HomeSupply.Controllers
 
             return View();
         }
-        public bool Pagamento(string token, string amount, string name, string email, string reference)
+        public bool Pagamento(string token, string amount, string name, string email, string frequency)
         {
             PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
             PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
@@ -32,7 +41,7 @@ namespace HomeSupply.Controllers
             PaymentsApi api = new PaymentsApi();
 
             // Pontual
-            if (String.IsNullOrEmpty(reference))
+            if (String.IsNullOrEmpty(frequency))
             {
                 Payment payment = new Payment();
                 payment.Amount = Convert.ToInt64(amount);
@@ -56,7 +65,7 @@ namespace HomeSupply.Controllers
             {
                 Plan plan = new Plan();
                 plan.Amount = Convert.ToInt64(amount);
-                plan.Frequency = reference;
+                plan.Frequency = frequency;
                 plan.Name = "Recurring Payment";
 
                 try
