@@ -37,7 +37,7 @@ namespace HomeSupply.Utils
 
                 return true;
             }
-            catch(Exception e)
+            catch
             {
                 return false;
             }

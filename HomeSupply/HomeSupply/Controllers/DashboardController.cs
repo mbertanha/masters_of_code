@@ -48,6 +48,7 @@ namespace HomeSupply.Controllers
                 }
                 catch
                 {
+                    ViewBag.Mensagem = "Houve um erro na execução. Não processado!";
                     return false;
                 }
             }
@@ -64,6 +65,7 @@ namespace HomeSupply.Controllers
                 }
                 catch
                 {
+                    ViewBag.Mensagem = "Houve um erro na execução. Não processado!";
                     return false;
                 }
 
@@ -82,8 +84,9 @@ namespace HomeSupply.Controllers
                     api.Create(customer);
                     this.enviarEmail();
                 }
-                catch (Exception e)
+                catch
                 {
+                    ViewBag.Mensagem = "Houve um erro na execução. Não processado!";
                     return false;
                 }
 
@@ -103,7 +106,7 @@ namespace HomeSupply.Controllers
 
                 return true;
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
@@ -124,6 +127,7 @@ namespace HomeSupply.Controllers
                 mensagem = "Houve um erro ao enviar o email";
             }
 
+            ViewBag.Mensagem = mensagem;
             //return mensagem;
         }
 
