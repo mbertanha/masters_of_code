@@ -40,7 +40,7 @@
 </div>
 <div class="catalog">
     <h2>Catálogo</h2>
-    <div class="catalog-item" id="1">
+    <div class="catalog-item" category-id="1" id="1">
         <img src="~/Images/catalog/img_churrasco.jpg" alt="Kit Churrasco"/>
         <div class="details">
             <h3>
@@ -88,8 +88,8 @@
         </div>
     </div>
 
-    <div class="catalog-item" id="2">
-        <img src="~/Images/catalog/groceries.jpg" alt="Despesa Mensal"/>
+    <div class="catalog-item" id="2" category-id="1">
+        <img src="~/Images/catalog/groceries.jpg" alt="Despesa Mensal" />
         <div class="details">
             <h3>
                 Despesa Mensal
@@ -117,6 +117,14 @@
                     <option value="3">20</option>
                 </select>
             </div>
+            <div class="line">
+                <div class="hidden" id="frequencyGroup1">
+                    <input name="frequencyGroup1" type="radio" id="frequency1" />
+                    <label for="frequency1">1 Mês</label>
+                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                    <label for="frequency2">1 Ano</label>
+                </div>
+            </div>
             <p class="price">R$ <span class="real">74,</span><span class="cents">90</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Market"
@@ -136,8 +144,8 @@
             <img src="~/Images/check.png" id="check-2" class="hidden" style="width:50px!important; height: 48px!important; float:right" />
         </div>
     </div>
-    <div class="catalog-item" id="3">
-        <img src="~/Images/catalog/img_piscina.jpg" alt="Limpeza de Piscina"/>
+    <div class="catalog-item" category-id="3" id="3">
+        <img src="~/Images/catalog/img_piscina.jpg" alt="Limpeza de Piscina" />
         <div class="details">
             <h3>
                 Piscina
@@ -164,6 +172,14 @@
                     <option value="3">20</option>
                 </select>
             </div>
+            <div class="line">
+                <div class="hidden" id="frequencyGroup1">
+                    <input name="frequencyGroup1" type="radio" id="frequency1" />
+                    <label for="frequency1">1 Mês</label>
+                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                    <label for="frequency2">1 Ano</label>
+                </div>
+            </div>
             <p class="price">R$ <span class="real">35,</span><span class="cents">99</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
                     data-name="Master Pool"
@@ -183,8 +199,8 @@
             <img src="~/Images/check.png" id="check-3" class="hidden" style="width:50px!important; height: 48px!important; float:right" />
         </div>
     </div>
-    <div class="catalog-item" id="4">
-        <img src="~/Images/catalog/jardinagem.jpg" alt="Serviço de Jardinagem"/>
+    <div class="catalog-item" category-id="4" id="4">
+        <img src="~/Images/catalog/jardinagem.jpg" alt="Serviço de Jardinagem" />
         <div class="details">
             <h3>
                 Jardinagem
@@ -210,6 +226,14 @@
                     <option value="2">10</option>
                     <option value="3">20</option>
                 </select>
+            </div>
+            <div class="line">
+                <div class="hidden" id="frequencyGroup1">
+                    <input name="frequencyGroup1" type="radio" id="frequency1" />
+                    <label for="frequency1">1 Mês</label>
+                    <input name="frequencyGroup1" type="radio" class="hidden" id="frequency2" />
+                    <label for="frequency2">1 Ano</label>
+                </div>
             </div>
             <p class="price">R$ <span class="real">34,</span><span class="cents">97</span></p>
             <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
@@ -239,6 +263,7 @@
         <p>
             27/04/2015
             <span>1 mes</span>
+            <i class="mdi-navigation-close"></i>
         </p>
     </div>
 
