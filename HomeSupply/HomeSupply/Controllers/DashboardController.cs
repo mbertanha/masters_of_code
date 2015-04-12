@@ -10,15 +10,21 @@ namespace HomeSupply.Controllers
 
         public ActionResult Index(string cardToken, string amount)
         {
-            //ViewBag.Mensagem = "Olá mundo!";
             if (!String.IsNullOrEmpty(cardToken) && !String.IsNullOrEmpty(amount))
             {
-                Pagamento(cardToken, amount);
+                if (Pagamento(cardToken, amount))
+                {
+                    ViewBag.Mensagem = "Pagamento Realizado com Sucesso!";
+                }
+                else
+                {
+                    ViewBag.Mensagem = "Ocorreu um erro durante o pagamento!";
+                }
             }
             
             return View();
         }
-        public void Pagamento(string token, string amount)
+        public bool Pagamento(string token, string amount)
         {
             PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
             PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
@@ -26,28 +32,20 @@ namespace HomeSupply.Controllers
             PaymentsApi api = new PaymentsApi();
 
             Payment payment = new Payment();
-            payment.Amount = Convert.ToInt64("10");
-            payment.Currency = "USD";
-            payment.Description = "LearningSimplify";
-            payment.Reference = "7a6ef6be31";
+            payment.Amount = Convert.ToInt64(amount);
+            payment.Currency = CurrencyInfo.Currency;
+            payment.Description = CurrencyInfo.DescriptionPayment;
             payment.Token = token;
 
             try
             {
                 payment = (Payment)api.Create(payment);
 
-                if (!String.IsNullOrEmpty(payment.PaymentStatus))
-                {
-                    if (payment.PaymentStatus.Equals(""))
-                    {
-                        ViewBag.Mensagem = PaymentInfo.PaymentSuccess;
-                    }
-                }
+                return payment.PaymentStatus.Equals("APPROVED");
             }
-            catch (Exception e)
+            catch
             {
-                ViewBag.Mensagem = PaymentInfo.PaymentSuccess;
-                Console.WriteLine(e.GetBaseException());
+                return false;
             }
         }
 

@@ -1,8 +1,8 @@
 /_resources/node_modules/
-/HomeSupply/HomeSupply/bin/
-/HomeSupply/HomeSupply/obj/
-/HomeSupply/HomeSupply/bin/
-/HomeSupply/HomeSupply.Utils/obj/
-bin/
-obj/
+HomeSupply/HomeSupply/bin/
+HomeSupply/HomeSupply/obj/
+HomeSupply/HomeSupply.Utils/bin/
+HomeSupply/HomeSupply.Utils/obj/
+/bin/
+/obj/
 HomeSupply/HomeSupply.v12.suo
