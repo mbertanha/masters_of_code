@@ -35,10 +35,9 @@ namespace HomeSupply.Controllers
         }
         public bool Pagamento(string token, string amount, string name, string email, string frequency)
         {
-            PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
-            PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
-
             PaymentsApi api = new PaymentsApi();
+            PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
+            PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
 
             // Pontual
             if (String.IsNullOrEmpty(frequency))
@@ -47,6 +46,7 @@ namespace HomeSupply.Controllers
                 payment.Amount = Convert.ToInt64(amount);
                 payment.Currency = CurrencyInfo.Currency;
                 payment.Description = CurrencyInfo.DescriptionPayment;
+                payment.Reference = "7a6ef6be31";
                 payment.Token = token;
 
                 try
@@ -55,7 +55,7 @@ namespace HomeSupply.Controllers
                     this.enviarEmail();
                     return payment.PaymentStatus.Equals("APPROVED");
                 }
-                catch
+                catch (Exception e)
                 {
                     ViewBag.Mensagem = "Houve um erro na execução. Não processado!";
                     return false;
@@ -138,6 +138,27 @@ namespace HomeSupply.Controllers
 
             ViewBag.Mensagem = mensagem;
             //return mensagem;
+        }
+
+        public ActionResult ExcluirAgendamento(String idAuth)
+        {
+            PaymentsApi paymentApi = new PaymentsApi();
+            PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
+            PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
+
+            Payment payment = new Payment();
+
+            payment.Id = idAuth;
+            try
+            {
+                payment = (Payment)paymentApi.Delete(payment);
+                ViewBag.Mensagem = "Pagamento removido com sucesso!";
+            }
+            catch (Exception e)
+            {
+                ViewBag.Mensagem = "Ocorreu um erro ao excluir a autorização.";
+            }
+            return View();
         }
 
     }
