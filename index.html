@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
+    <header>
+        <div class="wrapper">
+            <span class="brand">Home <span>Supply</span></span>
+            <div class="profile">
+                <img src="img/profile.jpg" alt="Luís Felipe" />
+                Luís Felipe
+            </div>
+        </div>
+    </header>
     <div class="wrapper">
         <div class="filter">
             <h2>Filtrar</h2>
@@ -41,11 +50,11 @@
                 <img src="img/catalog/img_churrasco.jpg" alt="Kit Churrasco" />
                 <h3>Kit Churrasco</h3>
                 <p>Carne, linguiça, carvão e cerveja.</p>
-                <p>11/04/2015</p>
+                <input type="text" value="11/04/2015" />
                 <label for="">
                     <input type="checkbox" value="recorrente" /> Recorrente?
                 </label>
-                <p>R$ 74,90</p>
+                <p class="price">R$ 74,90</p>
                 <a class="button" href="#masterPass">Master Pass</a>
             </div>
 
@@ -53,12 +62,26 @@
                 <img src="img/catalog/img_piscina.jpg" alt="Piscina" />
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
-                <p>11/04/2015</p>
+                <input type="text" value="11/04/2015" />
                 <label for="">
                     <input type="checkbox" value="recorrente" /> Recorrente?
                 </label>
-                <p>R$ 99,90</p>
+                <p class="price">R$ 99,90</p>
                 <a class="button" href="#masterPass">Master Pass</a>
+                <button data-sc-key="sbpb_N2ZhMTVlMWQtYmYzNy00ZmE1LTg1ODItMzQ3NjkwMzMyMzlk"
+       data-name="Jasmine Green Tea"
+       data-description="Smooth tea with a rich jasmine bouquet"
+       data-reference="99999"
+       data-amount="3000"
+       data-color="#12B830"
+       data-receipt="true"
+       data-masterpass="true"
+       data-redirect-url="http://localhost:64741"
+       data-operation="create.token"
+       id="sc_btn_1428789625543"
+       type="button">
+   Buy
+</button>
             </div>
             
             <div class="catalog-item" category-id="2">
@@ -97,7 +120,7 @@
     </div>
 
     <script type="text/javascript" src="js/jquery.1.11.2.min.js"></script>
-    <!-- <script type="text/javascript" src="https://www.simplify.com/commerce/v1/simplify.js"></script> -->
+    <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     <script type="text/javascript" src="js/filter.js"></script>
     <!-- <script type="text/javascript" src="js/token.js"></script> -->
 </body>
