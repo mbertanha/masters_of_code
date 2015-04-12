@@ -108,6 +108,7 @@ h4 {
 }
 
 .catalog-item {
+    min-height: 200px;
     background: white;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
@@ -242,4 +243,54 @@ h4 {
 
 .rating > span.colored:before {
     color: #F1C40F;
+}
+
+footer {
+    display: table;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .filter {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .catalog {
+        width: 100%;
+    }
+
+    .catalog-item img,
+    .catalog-item .details {
+        width: 96%;
+    }
+
+    .catalog-item img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .catalog-item button {
+        float: none;
+        width: 96%;
+    }
+
+    .calendar {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
 }

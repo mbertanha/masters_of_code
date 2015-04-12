@@ -206,6 +206,7 @@
     <Content Include="Images\check.png" />
     <Content Include="Images\icon-cart.png" />
     <Content Include="Images\profile.jpg" />
+    <Content Include="Images\rosto.jpg" />
     <Content Include="Scripts\catalog.js" />
     <Content Include="Scripts\filter.js" />
     <Content Include="Scripts\jquery.1.11.2.min.js" />
