@@ -31,8 +31,6 @@ namespace HomeSupply.Controllers
                 }
             }
 
-            ViewBag.Id = 1;
-
             return View();
         }
         public bool Pagamento(string token, string amount, string name, string email, string frequency)
