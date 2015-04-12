@@ -243,3 +243,9 @@ h4 {
 .rating > span.colored:before {
     color: #F1C40F;
 }
+
+.comprar{
+    width: 160px;
+    font-size: 16px;
+    font-weight:bold;
+}
