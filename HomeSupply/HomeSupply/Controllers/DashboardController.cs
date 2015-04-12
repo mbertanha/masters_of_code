@@ -54,10 +54,10 @@ namespace HomeSupply.Controllers
                 try
                 {
                     payment = (Payment)api.Create(payment);
-                    this.enviarEmail();
+                    EnviarEmail();
                     return payment.PaymentStatus.Equals("APPROVED");
                 }
-                catch (Exception e)
+                catch
                 {
                     ViewBag.Mensagem = "Houve um erro na execução. Não processado!";
                     return false;
@@ -93,7 +93,7 @@ namespace HomeSupply.Controllers
                 try
                 {
                     api.Create(customer);
-                    this.enviarEmail();
+                    EnviarEmail();
                 }
                 catch
                 {
@@ -105,25 +105,7 @@ namespace HomeSupply.Controllers
             }
         }
 
-        private Boolean verifyLostStolenCard(String id)
-        {
-            PaymentsApi paymentApi = new PaymentsApi();
-
-            CardToken cardToken = (CardToken)paymentApi.Find(typeof(CardToken), id);
-
-            try
-            {
-                //CODE API LOST STOLEN
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public void enviarEmail()
+        public void EnviarEmail()
         {
             String mensagem = String.Empty;
             Email email = new Email();
@@ -139,29 +121,6 @@ namespace HomeSupply.Controllers
             }
 
             Console.WriteLine(mensagem);
-            //return mensagem;
         }
-
-        //public ActionResult ExcluirAgendamento(String idAuth)
-        //{
-        //    PaymentsApi paymentApi = new PaymentsApi();
-        //    PaymentsApi.PublicApiKey = SimplifyKeys.PublicKey;
-        //    PaymentsApi.PrivateApiKey = SimplifyKeys.PrivateKey;
-
-        //    Payment payment = new Payment();
-
-        //    payment.Id = idAuth;
-        //    try
-        //    {
-        //        payment = (Payment)paymentApi.Delete(payment);
-        //        ViewBag.Mensagem = "Pagamento removido com sucesso!";
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        ViewBag.Mensagem = "Ocorreu um erro ao excluir a autorização.";
-        //    }
-        //    return View();
-        //}
-
     }
 }
