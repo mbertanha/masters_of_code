@@ -1,5 +1,37 @@
 body {
+    background: #FCFCFC;
     font: normal 12px Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #222;
+    display: table;
+    width: 100%;
+}
+
+.brand {
+    color: #c0392b;
+    float: left;
+    font: bold 23px Arial;
+    margin: 12px 0;
+}
+
+.brand span {
+    color: #f1c40f;
+}
+
+.profile {
+    color: white;
+    float: right;
+    font: bold 13px/27px Arial;
+}
+
+.profile img {
+    margin: 8px 12px 8px 0;
+    vertical-align: middle;
+    width: 43px;
 }
 
 .wrapper {
@@ -17,20 +49,33 @@ body {
     padding: 23px 15px;
 }
 
-.subcategories label {
+.fiter-item label {
     display: block;
 }
 
+.fiter-item label input {
+    margin: 12px;
+    width: 30px;
+}
+
 .catalog {
-    border: 1px solid;
     float: left;
-    width: 58%;
+    width: 59%;
+}
+
+.catalog h2 {
+    font-size: 53px;
+    margin: 21px auto;
+    width: 96%;
 }
 
 .catalog-item {
-    border: 1px solid;
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
     display: table;
-    margin: 0 auto 13px;
+    margin: 0 auto 6px;
     padding: 23px 1.5%;
     width: 96%;
 }
@@ -39,6 +84,32 @@ body {
     float: left;
     margin-right: 15px;
     max-width: 220px;
+}
+
+.catalog-item h3 {
+    font-size: 33px;
+    margin: 0 0 13px 0;
+}
+
+.catalog-item p {
+    font-size: 15px;
+    margin: 0 0 13px 0;
+}
+
+.catalog-item input {
+    border-bottom: 2px solid #C0392B;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 15px;
+    margin: 0 0 13px 0;
+    padding: 10px 13px;
+    width: 100px;
+}
+
+.catalog-item p.price {
+    font-size: 33px;
+    margin-top: 13px;
 }
 
 .catalog-item a.button {
