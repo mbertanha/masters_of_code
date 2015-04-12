@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script> -->
-<head>
+	<link rel="stylesheet" href="css/materialize.min.css">
+ <head>
     <meta charset="UTF-8">
     <title>Home Supply</title>
     <link rel="stylesheet" href="css/theme.css">
@@ -47,7 +46,8 @@
                 <img src="img/catalog/img_churrasco.jpg" alt="Kit Churrasco" />
                 <h3>Kit Churrasco</h3>
                 <p>Carne, linguiça, carvão e cerveja.</p>
-                <input type="text" value="11/04/2015" />
+				<label for="dataRecorrente1" class="">Data</label>
+                <input type="date" class="datepicker" id="dataRecorrente1">
 				<input type="checkbox" class="recorrente"  id="recorrent1" value="1">
 				<label for="recorrent1">Recorrente</label>
 				<div class="hidden" id="frequencyGroup1">
@@ -70,12 +70,12 @@
 				   id="sc_btn_1428789625543"
 				   type="button">Buy</button>
             </div>
-
             <div class="catalog-item" category-id="1">
                 <img src="img/catalog/img_piscina.jpg" alt="Piscina" />
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
-                <input type="text" value="11/04/2015" />
+                <label for="dataRecorrente2" class="">Data</label>
+                <input type="date" class="datepicker" id="dataRecorrente2">
 				<input type="checkbox" class="recorrente" id="recorrent2" value="2"/> 
                 <label for="recorrent2">Recorrente</label>
 				<div class="hidden" id="frequencyGroup2">
@@ -98,11 +98,11 @@
 				   id="sc_btn_1428789625543"
 				   type="button">Buy</button>
             </div>
-            
-            <div class="catalog-item" category-id="2">
+			<div class="catalog-item" category-id="2">
                 <h3>Piscina</h3>
                 <p>Limpeza de piscina.</p>
-                <p>11/04/2015</p>
+                <label for="dataRecorrente3" class="">Data</label>	
+                <input type="date" class="datepicker" id="dataRecorrente3">
 				<input type="checkbox" class="recorrente" id="recorrent3" value="3" /> 
                 <label for="recorrent3">Recorrente</label>
 				<div class="hidden" id="frequencyGroup3">
@@ -124,10 +124,8 @@
 				   data-operation="create.token"
 				   id="sc_btn_1428789625543"
 				   type="button">Buy</button>
-            </div>
-            
-            
-        </div>
+		    </div>
+	    </div>
         <div class="calendar">
             <h3>Agenda</h3>
             <div class="calendar-item">
@@ -160,6 +158,7 @@
     <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     <script type="text/javascript" src="js/filter.js"></script>
 	<script type="text/javascript" src="js/catalog.js"></script>
+	<script src="js/materialize.js"></script>
     <!-- <script type="text/javascript" src="js/token.js"></script> -->
 </body>
 </html>
